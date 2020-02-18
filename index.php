@@ -4,7 +4,7 @@ session_start();
 $error_username=$error_password=$error_ulevel="";
 if(isset($_POST['submit'])){
 $username=$_POST['username'];
-$password=$_POST['password'];
+$password=sha1($_POST['password']);
 $ulevel=$_POST['ulevel'];
 if(strlen($username)<4){
 }
@@ -121,7 +121,7 @@ else{
 	<div class="row-fluid" style="color: red;font-size: 15px;">
 				<div class="col-md-6">
 				<h4><span id=tick2>
-				</span>&nbsp;| 
+				</span>&nbsp;|
 <script>
 				function show2(){
 				if (!document.all&&!document.getElementById)
@@ -155,16 +155,17 @@ else{
           ?><h4>
             </div>
             </div>
-			
+
 			</div>
 			</div>
-			
+
         </div>
 
 
     </div>
 	<!--START RIGTH SIDE -->
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script>alert('Username: Admin, Password: adminadmin, userlevel: Principal')</script>
 </div>
 </body>
 </html>

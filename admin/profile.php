@@ -29,7 +29,9 @@ else{
 <html>
 <head>
 	<title><?php echo $_SESSION['username'];?> User Profile</title>
+	
 	<link id="stylesheet" href="../assets/css/bootstrap.min.css" rel="stylesheet">
+	<link id="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container-fluid" style="padding-top: 10px;">

@@ -1,5 +1,5 @@
 <?php
-$conn=mysqli_connect('localhost','root','','school2');
+$conn=mysqli_connect('localhost','root','root','school2');
 $sql="SELECT * FROM student";
 $sel="SELECT * FROM closing";
 $school="SELECT * FROM school";
